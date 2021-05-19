@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watermark Generator</title>
+</head>
+<body>
+    <h1> Generate WaterMark From Stolen Images</h1>
+    <form id="watermarkgenerator-form" action="{{ url_for('generate_watermark') }}" method="POST" enctype="multipart/form-data">
+        <input type="submit" value="Generate Watermark">
+    </form>
+</body>
+</html>

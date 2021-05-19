@@ -1,0 +1,15 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wartermarking</title>
+    </head>
+    <body>
+    <h1>Upload Original Image & Watermark</h1>
+    <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="Original Image" accept="image/*" multiple>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    </body>
+    </html>

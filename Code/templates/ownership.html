@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ownership Share Generation</title>
+</head>
+<body>
+Ownership Share Generated
+<div>
+    <h1> Generated Orginal Share </h1>
+    <br>
+    <img src="images/owner_img.jpg">
+    <br>
+</div>
+<div>
+    <h1> Generated Temporary Share</h1>
+    <br>
+    <img src="images/master_img.jpg">
+    <br>
+</div>
+<div>
+    <h1>Upload Stolen Image</h1>
+    <form id="uploadstolenimages-form" action="{{ url_for('upload_StolenImages') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="Stolen Image" accept="image/*" multiple>
+        <input type="submit" value="Upload">
+</div>
+</body>
+</html>
